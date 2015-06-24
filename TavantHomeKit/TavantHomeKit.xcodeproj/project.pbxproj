@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45EE05B61B3ADC7F0003894C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE05B51B3ADC7F0003894C /* AppDelegate.swift */; };
+		45EE05B81B3ADC7F0003894C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE05B71B3ADC7F0003894C /* ViewController.swift */; };
+		45EE05BB1B3ADC7F0003894C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EE05B91B3ADC7F0003894C /* Main.storyboard */; };
+		45EE05BD1B3ADC7F0003894C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45EE05BC1B3ADC7F0003894C /* Images.xcassets */; };
+		45EE05C01B3ADC7F0003894C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45EE05BE1B3ADC7F0003894C /* LaunchScreen.xib */; };
+		45EE05CC1B3ADC7F0003894C /* TavantHomeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE05CB1B3ADC7F0003894C /* TavantHomeKitTests.swift */; };
+		45EE05D61B3ADD790003894C /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EE05D51B3ADD790003894C /* HomeKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45EE05C61B3ADC7F0003894C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45EE05A81B3ADC7F0003894C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45EE05AF1B3ADC7F0003894C;
+			remoteInfo = TavantHomeKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		45EE05B01B3ADC7F0003894C /* TavantHomeKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TavantHomeKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45EE05B41B3ADC7F0003894C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45EE05B51B3ADC7F0003894C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45EE05B71B3ADC7F0003894C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45EE05BA1B3ADC7F0003894C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45EE05BC1B3ADC7F0003894C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		45EE05BF1B3ADC7F0003894C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		45EE05C51B3ADC7F0003894C /* TavantHomeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TavantHomeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45EE05CA1B3ADC7F0003894C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45EE05CB1B3ADC7F0003894C /* TavantHomeKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TavantHomeKitTests.swift; sourceTree = "<group>"; };
+		45EE05D51B3ADD790003894C /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		45EE05D71B3ADD790003894C /* TavantHomeKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TavantHomeKit.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45EE05AD1B3ADC7F0003894C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45EE05D61B3ADD790003894C /* HomeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45EE05C21B3ADC7F0003894C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45EE05A71B3ADC7F0003894C = {
+			isa = PBXGroup;
+			children = (
+				45EE05D51B3ADD790003894C /* HomeKit.framework */,
+				45EE05B21B3ADC7F0003894C /* TavantHomeKit */,
+				45EE05C81B3ADC7F0003894C /* TavantHomeKitTests */,
+				45EE05B11B3ADC7F0003894C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45EE05B11B3ADC7F0003894C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45EE05B01B3ADC7F0003894C /* TavantHomeKit.app */,
+				45EE05C51B3ADC7F0003894C /* TavantHomeKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45EE05B21B3ADC7F0003894C /* TavantHomeKit */ = {
+			isa = PBXGroup;
+			children = (
+				45EE05D71B3ADD790003894C /* TavantHomeKit.entitlements */,
+				45EE05B51B3ADC7F0003894C /* AppDelegate.swift */,
+				45EE05B71B3ADC7F0003894C /* ViewController.swift */,
+				45EE05B91B3ADC7F0003894C /* Main.storyboard */,
+				45EE05BC1B3ADC7F0003894C /* Images.xcassets */,
+				45EE05BE1B3ADC7F0003894C /* LaunchScreen.xib */,
+				45EE05B31B3ADC7F0003894C /* Supporting Files */,
+			);
+			path = TavantHomeKit;
+			sourceTree = "<group>";
+		};
+		45EE05B31B3ADC7F0003894C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45EE05B41B3ADC7F0003894C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45EE05C81B3ADC7F0003894C /* TavantHomeKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				45EE05CB1B3ADC7F0003894C /* TavantHomeKitTests.swift */,
+				45EE05C91B3ADC7F0003894C /* Supporting Files */,
+			);
+			path = TavantHomeKitTests;
+			sourceTree = "<group>";
+		};
+		45EE05C91B3ADC7F0003894C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45EE05CA1B3ADC7F0003894C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45EE05AF1B3ADC7F0003894C /* TavantHomeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45EE05CF1B3ADC7F0003894C /* Build configuration list for PBXNativeTarget "TavantHomeKit" */;
+			buildPhases = (
+				45EE05AC1B3ADC7F0003894C /* Sources */,
+				45EE05AD1B3ADC7F0003894C /* Frameworks */,
+				45EE05AE1B3ADC7F0003894C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TavantHomeKit;
+			productName = TavantHomeKit;
+			productReference = 45EE05B01B3ADC7F0003894C /* TavantHomeKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45EE05C41B3ADC7F0003894C /* TavantHomeKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45EE05D21B3ADC7F0003894C /* Build configuration list for PBXNativeTarget "TavantHomeKitTests" */;
+			buildPhases = (
+				45EE05C11B3ADC7F0003894C /* Sources */,
+				45EE05C21B3ADC7F0003894C /* Frameworks */,
+				45EE05C31B3ADC7F0003894C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45EE05C71B3ADC7F0003894C /* PBXTargetDependency */,
+			);
+			name = TavantHomeKitTests;
+			productName = TavantHomeKitTests;
+			productReference = 45EE05C51B3ADC7F0003894C /* TavantHomeKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45EE05A81B3ADC7F0003894C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = tavant_sreejit;
+				TargetAttributes = {
+					45EE05AF1B3ADC7F0003894C = {
+						CreatedOnToolsVersion = 6.3.1;
+						SystemCapabilities = {
+							com.apple.HomeKit = {
+								enabled = 1;
+							};
+						};
+					};
+					45EE05C41B3ADC7F0003894C = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 45EE05AF1B3ADC7F0003894C;
+					};
+				};
+			};
+			buildConfigurationList = 45EE05AB1B3ADC7F0003894C /* Build configuration list for PBXProject "TavantHomeKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45EE05A71B3ADC7F0003894C;
+			productRefGroup = 45EE05B11B3ADC7F0003894C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45EE05AF1B3ADC7F0003894C /* TavantHomeKit */,
+				45EE05C41B3ADC7F0003894C /* TavantHomeKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45EE05AE1B3ADC7F0003894C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45EE05BB1B3ADC7F0003894C /* Main.storyboard in Resources */,
+				45EE05C01B3ADC7F0003894C /* LaunchScreen.xib in Resources */,
+				45EE05BD1B3ADC7F0003894C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45EE05C31B3ADC7F0003894C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45EE05AC1B3ADC7F0003894C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45EE05B81B3ADC7F0003894C /* ViewController.swift in Sources */,
+				45EE05B61B3ADC7F0003894C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45EE05C11B3ADC7F0003894C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45EE05CC1B3ADC7F0003894C /* TavantHomeKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45EE05C71B3ADC7F0003894C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45EE05AF1B3ADC7F0003894C /* TavantHomeKit */;
+			targetProxy = 45EE05C61B3ADC7F0003894C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45EE05B91B3ADC7F0003894C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45EE05BA1B3ADC7F0003894C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45EE05BE1B3ADC7F0003894C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45EE05BF1B3ADC7F0003894C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45EE05CD1B3ADC7F0003894C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45EE05CE1B3ADC7F0003894C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45EE05D01B3ADC7F0003894C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TavantHomeKit/TavantHomeKit.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TavantHomeKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		45EE05D11B3ADC7F0003894C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TavantHomeKit/TavantHomeKit.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TavantHomeKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		45EE05D31B3ADC7F0003894C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TavantHomeKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TavantHomeKit.app/TavantHomeKit";
+			};
+			name = Debug;
+		};
+		45EE05D41B3ADC7F0003894C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TavantHomeKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TavantHomeKit.app/TavantHomeKit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45EE05AB1B3ADC7F0003894C /* Build configuration list for PBXProject "TavantHomeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45EE05CD1B3ADC7F0003894C /* Debug */,
+				45EE05CE1B3ADC7F0003894C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45EE05CF1B3ADC7F0003894C /* Build configuration list for PBXNativeTarget "TavantHomeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45EE05D01B3ADC7F0003894C /* Debug */,
+				45EE05D11B3ADC7F0003894C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		45EE05D21B3ADC7F0003894C /* Build configuration list for PBXNativeTarget "TavantHomeKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45EE05D31B3ADC7F0003894C /* Debug */,
+				45EE05D41B3ADC7F0003894C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45EE05A81B3ADC7F0003894C /* Project object */;
+}
