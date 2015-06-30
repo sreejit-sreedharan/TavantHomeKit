@@ -162,6 +162,7 @@
 		45EE05A81B3ADC7F0003894C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = tavant_sreejit;
 				TargetAttributes = {
@@ -356,6 +357,7 @@
 				CODE_SIGN_ENTITLEMENTS = TavantHomeKit/TavantHomeKit.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TavantHomeKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -368,6 +370,7 @@
 				CODE_SIGN_ENTITLEMENTS = TavantHomeKit/TavantHomeKit.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TavantHomeKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -426,6 +429,7 @@
 				45EE05D11B3ADC7F0003894C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45EE05D21B3ADC7F0003894C /* Build configuration list for PBXNativeTarget "TavantHomeKitTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +438,7 @@
 				45EE05D41B3ADC7F0003894C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
