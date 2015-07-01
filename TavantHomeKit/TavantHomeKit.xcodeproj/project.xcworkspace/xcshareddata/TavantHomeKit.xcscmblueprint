@@ -1,20 +1,21 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0A4164F3385DA6EAF1A1F29EA837908A2339081F+++EA448C2",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0A4164F3385DA6EAF1A1F29EA837908A2339081F",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
-    "0A4164F3385DA6EAF1A1F29EA837908A2339081F+++EA448C2" : {
+    "514fc0e1-e916-0410-81aa-bcb374a88025++1473" : {
+
+    },
+    "0A4164F3385DA6EAF1A1F29EA837908A2339081F" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "514fc0e1-e916-0410-81aa-bcb374a88025++5317+++EA448C2" : 0,
-    "0A4164F3385DA6EAF1A1F29EA837908A2339081F+++EA448C2" : 0,
-    "514fc0e1-e916-0410-81aa-bcb374a88025++1473+++EA448C2" : 0
+    "514fc0e1-e916-0410-81aa-bcb374a88025++1473" : 0,
+    "0A4164F3385DA6EAF1A1F29EA837908A2339081F" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B61661E8-FEB3-458A-9136-02C97AB72AB6",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "514fc0e1-e916-0410-81aa-bcb374a88025++5317+++EA448C2" : "",
-    "0A4164F3385DA6EAF1A1F29EA837908A2339081F+++EA448C2" : "TavantHomeKit",
-    "514fc0e1-e916-0410-81aa-bcb374a88025++1473+++EA448C2" : "TavantHomeKit"
+    "514fc0e1-e916-0410-81aa-bcb374a88025++1473" : "",
+    "0A4164F3385DA6EAF1A1F29EA837908A2339081F" : "TavantHomeKit"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "TavantHomeKit",
   "DVTSourceControlWorkspaceBlueprintVersion" : 203,
@@ -23,17 +24,17 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/inusv001.act.org\/repos02",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0A4164F3385DA6EAF1A1F29EA837908A2339081F+++EA448C2"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0A4164F3385DA6EAF1A1F29EA837908A2339081F"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/inusv001.act.org\/repos02",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "514fc0e1-e916-0410-81aa-bcb374a88025++1473+++EA448C2"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "514fc0e1-e916-0410-81aa-bcb374a88025++1473"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/inusv001.act.org\/repos02",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "514fc0e1-e916-0410-81aa-bcb374a88025++5317+++EA448C2"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "514fc0e1-e916-0410-81aa-bcb374a88025++1473"
     }
   ]
 }
