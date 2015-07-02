@@ -14,6 +14,10 @@
 		45EE05C01B3ADC7F0003894C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45EE05BE1B3ADC7F0003894C /* LaunchScreen.xib */; };
 		45EE05CC1B3ADC7F0003894C /* TavantHomeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE05CB1B3ADC7F0003894C /* TavantHomeKitTests.swift */; };
 		45EE05D61B3ADD790003894C /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EE05D51B3ADD790003894C /* HomeKit.framework */; };
+		B1CE0AB61B45135E0074A6B0 /* HomeScreenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1CE0AB51B45135E0074A6B0 /* HomeScreenStoryboard.storyboard */; };
+		B1CE0ABA1B4514190074A6B0 /* HomeScreenTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE0AB91B4514190074A6B0 /* HomeScreenTabBarController.swift */; };
+		B1CE0ABC1B454DF30074A6B0 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE0ABB1B454DF30074A6B0 /* RoomViewController.swift */; };
+		B1CE0ABF1B45567F0074A6B0 /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE0ABE1B45567F0074A6B0 /* HomeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,10 @@
 		45EE05CB1B3ADC7F0003894C /* TavantHomeKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TavantHomeKitTests.swift; sourceTree = "<group>"; };
 		45EE05D51B3ADD790003894C /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
 		45EE05D71B3ADD790003894C /* TavantHomeKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TavantHomeKit.entitlements; sourceTree = "<group>"; };
+		B1CE0AB51B45135E0074A6B0 /* HomeScreenStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeScreenStoryboard.storyboard; sourceTree = "<group>"; };
+		B1CE0AB91B4514190074A6B0 /* HomeScreenTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenTabBarController.swift; sourceTree = "<group>"; };
+		B1CE0ABB1B454DF30074A6B0 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
+		B1CE0ABE1B45567F0074A6B0 /* HomeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +90,14 @@
 		45EE05B21B3ADC7F0003894C /* TavantHomeKit */ = {
 			isa = PBXGroup;
 			children = (
+				B1CE0ABD1B4556540074A6B0 /* Homes */,
 				45EE05D71B3ADD790003894C /* TavantHomeKit.entitlements */,
 				45EE05B51B3ADC7F0003894C /* AppDelegate.swift */,
 				45EE05B71B3ADC7F0003894C /* ViewController.swift */,
 				45EE05B91B3ADC7F0003894C /* Main.storyboard */,
+				B1CE0AB51B45135E0074A6B0 /* HomeScreenStoryboard.storyboard */,
+				B1CE0AB91B4514190074A6B0 /* HomeScreenTabBarController.swift */,
+				B1CE0ABB1B454DF30074A6B0 /* RoomViewController.swift */,
 				45EE05BC1B3ADC7F0003894C /* Images.xcassets */,
 				45EE05BE1B3ADC7F0003894C /* LaunchScreen.xib */,
 				45EE05B31B3ADC7F0003894C /* Supporting Files */,
@@ -116,6 +128,14 @@
 				45EE05CA1B3ADC7F0003894C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1CE0ABD1B4556540074A6B0 /* Homes */ = {
+			isa = PBXGroup;
+			children = (
+				B1CE0ABE1B45567F0074A6B0 /* HomeManager.swift */,
+			);
+			name = Homes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1CE0AB61B45135E0074A6B0 /* HomeScreenStoryboard.storyboard in Resources */,
 				45EE05BB1B3ADC7F0003894C /* Main.storyboard in Resources */,
 				45EE05C01B3ADC7F0003894C /* LaunchScreen.xib in Resources */,
 				45EE05BD1B3ADC7F0003894C /* Images.xcassets in Resources */,
@@ -224,8 +245,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1CE0ABA1B4514190074A6B0 /* HomeScreenTabBarController.swift in Sources */,
+				B1CE0ABF1B45567F0074A6B0 /* HomeManager.swift in Sources */,
 				45EE05B81B3ADC7F0003894C /* ViewController.swift in Sources */,
 				45EE05B61B3ADC7F0003894C /* AppDelegate.swift in Sources */,
+				B1CE0ABC1B454DF30074A6B0 /* RoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

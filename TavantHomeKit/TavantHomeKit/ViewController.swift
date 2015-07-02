@@ -22,7 +22,13 @@ class ViewController: UIViewController {
 
 
     @IBAction func loginButtonPressed(sender: AnyObject) {
-        
+//        let homeScreenStoryboard : UIStoryboard = UIStoryboard(name: "HomeScreenStoryboard", bundle: nil)
+//        let vc : HomeScreenTabBarController = homeScreenStoryboard.instantiateViewControllerWithIdentifier("HomeScreenStoryBoardID") as! HomeScreenTabBarController
+//        vc.currentTabController = vc.tabBarController
+//        print(vc.currentTabController)
+//        let homeNavigationController = UINavigationController(rootViewController: vc)
+//        
+//        self.presentViewController(homeNavigationController, animated: true, completion: nil)
     }
 }
 
