@@ -47,5 +47,22 @@ class RoomViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func addNewHomeButtonPressed(sender: AnyObject) {
+        self.addHomeWithName("Home1")
+    }
+    
+    private func addHomeWithName(name: String) {
+        homeManager.addHomeWithName(name) { newHome, error in
+            if let error = error {
+                self.displayError(error)
+                return
+            }
+            
+            //self.didAddHome(newHome!)
+            self.displayMessage("Home added", message: "\(name)")
+        }
+        
+    }
 
 }

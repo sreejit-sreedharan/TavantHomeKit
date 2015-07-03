@@ -22,6 +22,8 @@ class ViewController: UIViewController {
 
 
     @IBAction func loginButtonPressed(sender: AnyObject) {
+        
+//        homeManager
 //        let homeScreenStoryboard : UIStoryboard = UIStoryboard(name: "HomeScreenStoryboard", bundle: nil)
 //        let vc : HomeScreenTabBarController = homeScreenStoryboard.instantiateViewControllerWithIdentifier("HomeScreenStoryBoardID") as! HomeScreenTabBarController
 //        vc.currentTabController = vc.tabBarController

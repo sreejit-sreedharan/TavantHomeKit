@@ -61,7 +61,11 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Rooms" id="G5v-97-sgr">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4jQ-a9-qvc"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4jQ-a9-qvc">
+                            <connections>
+                                <action selector="addNewHomeButtonPressed:" destination="xTa-i8-4d4" id="bWu-g6-nYb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="roomTableView" destination="U2b-tP-qw3" id="hhw-d5-i8g"/>
@@ -112,7 +116,6 @@
         <!--Home Screen Tab Bar Controller-->
         <scene sceneID="dVy-TY-lJm">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hb8-M0-bYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="HomeScreenStoryBoardID" id="OBI-7D-SNC" customClass="HomeScreenTabBarController" customModule="TavantHomeKit" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="M9H-dI-C8c">
@@ -127,6 +130,7 @@
                         <segue destination="DYJ-bw-E1p" kind="relationship" relationship="viewControllers" id="CKe-5m-Gkj"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hb8-M0-bYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="335" y="662"/>
         </scene>

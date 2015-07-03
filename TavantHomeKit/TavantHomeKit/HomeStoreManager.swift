@@ -8,8 +8,8 @@
 
 import HomeKit
 
-class HomeStore: NSObject, HMHomeManagerDelegate {
-    static let sharedStore = HomeStore()
+class HomeStoreManager: NSObject, HMHomeManagerDelegate {
+    static let sharedStoreManager = HomeStoreManager()
     
     var home: HMHome?
     

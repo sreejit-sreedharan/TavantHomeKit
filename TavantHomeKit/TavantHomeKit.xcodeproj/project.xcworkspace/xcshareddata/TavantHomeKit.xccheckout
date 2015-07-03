@@ -7,36 +7,23 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>B61661E8-FEB3-458A-9136-02C97AB72AB6</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>TavantHomeKit</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>0A4164F3385DA6EAF1A1F29EA837908A2339081F</key>
-		<string>https://github.com/sreejit-sreedharan/TavantHomeKit.git</string>
+		<string>https://inusv001.act.org/repos02</string>
 		<key>514fc0e1-e916-0410-81aa-bcb374a88025++1473</key>
-		<string>https://inusv001.act.org/repos02/VTC/GST/G3Prototypes/PnD/TavantHomeKit</string>
-		<key>514fc0e1-e916-0410-81aa-bcb374a88025++5317</key>
-		<string>https://inusv001.act.org/repos02/VTC/GST/G3Prototypes/PnD</string>
+		<string>https://inusv001.act.org/repos02</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TavantHomeKit/TavantHomeKit.xcodeproj/project.xcworkspace</string>
+	<string>TavantHomeKit/TavantHomeKit.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0A4164F3385DA6EAF1A1F29EA837908A2339081F</key>
 		<string>../../..</string>
 		<key>514fc0e1-e916-0410-81aa-bcb374a88025++1473</key>
-		<string>../../..</string>
-		<key>514fc0e1-e916-0410-81aa-bcb374a88025++5317</key>
 		<string>../../../..</string>
 	</dict>
-	<key>IDESourceControlProjectRepositoryRootDictionary</key>
-	<dict>
-		<key>514fc0e1-e916-0410-81aa-bcb374a88025++1473</key>
-		<string>https://inusv001.act.org/repos02</string>
-		<key>514fc0e1-e916-0410-81aa-bcb374a88025++5317</key>
-		<string>https://inusv001.act.org/repos02</string>
-	</dict>
-	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/sreejit-sreedharan/TavantHomeKit.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -45,25 +32,25 @@
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.subversion</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>514fc0e1-e916-0410-81aa-bcb374a88025++5317</string>
-			<key>IDESourceControlWCCName</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>0A4164F3385DA6EAF1A1F29EA837908A2339081F</string>
+			<string>514fc0e1-e916-0410-81aa-bcb374a88025++1473</string>
 			<key>IDESourceControlWCCName</key>
-			<string>TavantHomeKit</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.subversion</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>514fc0e1-e916-0410-81aa-bcb374a88025++1473</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0A4164F3385DA6EAF1A1F29EA837908A2339081F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TavantHomeKit</string>
 		</dict>

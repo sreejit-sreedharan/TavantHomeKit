@@ -9,9 +9,11 @@
 import UIKit
 import HomeKit
 
-class HomeScreenTabBarController: UITabBarController {
+
+class HomeScreenTabBarController: UITabBarController,HMHomeManagerDelegate {
 
     var currentTabController:UITabBarController?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,5 +47,7 @@ class HomeScreenTabBarController: UITabBarController {
             print(index)
         }
     }
+    
+
 
 }

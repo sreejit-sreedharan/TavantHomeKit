@@ -14,10 +14,11 @@
 		45EE05C01B3ADC7F0003894C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45EE05BE1B3ADC7F0003894C /* LaunchScreen.xib */; };
 		45EE05CC1B3ADC7F0003894C /* TavantHomeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE05CB1B3ADC7F0003894C /* TavantHomeKitTests.swift */; };
 		45EE05D61B3ADD790003894C /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EE05D51B3ADD790003894C /* HomeKit.framework */; };
+		B10AAF3E1B466C8200B28548 /* UIViewController+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10AAF3D1B466C8200B28548 /* UIViewController+Utility.swift */; };
 		B1CE0AB61B45135E0074A6B0 /* HomeScreenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1CE0AB51B45135E0074A6B0 /* HomeScreenStoryboard.storyboard */; };
 		B1CE0ABA1B4514190074A6B0 /* HomeScreenTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE0AB91B4514190074A6B0 /* HomeScreenTabBarController.swift */; };
 		B1CE0ABC1B454DF30074A6B0 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE0ABB1B454DF30074A6B0 /* RoomViewController.swift */; };
-		B1CE0ABF1B45567F0074A6B0 /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE0ABE1B45567F0074A6B0 /* HomeManager.swift */; };
+		B1CE0ABF1B45567F0074A6B0 /* HomeStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE0ABE1B45567F0074A6B0 /* HomeStoreManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +44,11 @@
 		45EE05CB1B3ADC7F0003894C /* TavantHomeKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TavantHomeKitTests.swift; sourceTree = "<group>"; };
 		45EE05D51B3ADD790003894C /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
 		45EE05D71B3ADD790003894C /* TavantHomeKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TavantHomeKit.entitlements; sourceTree = "<group>"; };
+		B10AAF3D1B466C8200B28548 /* UIViewController+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utility.swift"; sourceTree = "<group>"; };
 		B1CE0AB51B45135E0074A6B0 /* HomeScreenStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeScreenStoryboard.storyboard; sourceTree = "<group>"; };
 		B1CE0AB91B4514190074A6B0 /* HomeScreenTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenTabBarController.swift; sourceTree = "<group>"; };
 		B1CE0ABB1B454DF30074A6B0 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
-		B1CE0ABE1B45567F0074A6B0 /* HomeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
+		B1CE0ABE1B45567F0074A6B0 /* HomeStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeStoreManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				45EE05B41B3ADC7F0003894C /* Info.plist */,
+				B10AAF3D1B466C8200B28548 /* UIViewController+Utility.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -133,7 +136,7 @@
 		B1CE0ABD1B4556540074A6B0 /* Homes */ = {
 			isa = PBXGroup;
 			children = (
-				B1CE0ABE1B45567F0074A6B0 /* HomeManager.swift */,
+				B1CE0ABE1B45567F0074A6B0 /* HomeStoreManager.swift */,
 			);
 			name = Homes;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				TargetAttributes = {
 					45EE05AF1B3ADC7F0003894C = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 93ZK4B4MRX;
 						SystemCapabilities = {
 							com.apple.HomeKit = {
 								enabled = 1;
@@ -246,10 +250,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1CE0ABA1B4514190074A6B0 /* HomeScreenTabBarController.swift in Sources */,
-				B1CE0ABF1B45567F0074A6B0 /* HomeManager.swift in Sources */,
+				B1CE0ABF1B45567F0074A6B0 /* HomeStoreManager.swift in Sources */,
 				45EE05B81B3ADC7F0003894C /* ViewController.swift in Sources */,
 				45EE05B61B3ADC7F0003894C /* AppDelegate.swift in Sources */,
 				B1CE0ABC1B454DF30074A6B0 /* RoomViewController.swift in Sources */,
+				B10AAF3E1B466C8200B28548 /* UIViewController+Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,10 +385,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TavantHomeKit/TavantHomeKit.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TavantHomeKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -393,10 +400,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TavantHomeKit/TavantHomeKit.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TavantHomeKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
