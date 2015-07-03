@@ -12,7 +12,6 @@ import HomeKit
 class RoomViewController: UIViewController,HMHomeManagerDelegate,HMAccessoryDelegate {
 
     let cellReuseId:String = "CellID"
-    //var homes = [HMHome]()
     //Declare properties here ...
     @IBOutlet weak var roomTableView: UITableView!
     
@@ -67,7 +66,8 @@ class RoomViewController: UIViewController,HMHomeManagerDelegate,HMAccessoryDele
         }
         
     }
-
+    
+    // To update the home manager class with the updated homes available
     func homeManagerDidUpdateHomes(manager: HMHomeManager) {
         //Test code for removing a home ...
 //        let homesArray = homeManager.homes

@@ -17,7 +17,15 @@ class HomeScreenTabBarController: UITabBarController,HMHomeManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let roomScreenStoryboard : UIStoryboard = UIStoryboard(name: "RoomStoryboard", bundle: nil)
+        let roomScreen : UINavigationController = roomScreenStoryboard.instantiateViewControllerWithIdentifier("RoomStoryBoardID") as! UINavigationController
+        //let roomNavigationController:UINavigationController = roomScreen.navigationController!
+        
+        let deviceScreenStoryboard : UIStoryboard = UIStoryboard(name: "DeviceStoryboard", bundle: nil)
+        let deviceScreen : UINavigationController = deviceScreenStoryboard.instantiateViewControllerWithIdentifier("DeviceStoryboardID") as! UINavigationController
+        
+        self.viewControllers = [roomScreen,deviceScreen];
         // Do any additional setup after loading the view.
 //        print("\(self.tabBarController) and  \(currentTabController)")
 //        var vCArray = self.viewControllers!

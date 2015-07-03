@@ -16,10 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        let homeScreenStoryboard : UIStoryboard = UIStoryboard(name: "HomeScreenStoryboard", bundle: nil)
+        let homeScreenStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let homeScreenTabBar : HomeScreenTabBarController = homeScreenStoryboard.instantiateViewControllerWithIdentifier("HomeScreenStoryBoardID") as! HomeScreenTabBarController
         homeScreenTabBar.selectedIndex = 1
-        self.window?.rootViewController = homeScreenTabBar
+        //self.window?.rootViewController = homeScreenTabBar
         self.window?.makeKeyAndVisible()
         return true
     }
