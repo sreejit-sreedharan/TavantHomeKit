@@ -12,6 +12,8 @@ import HomeKit
 
 extension UIViewController{
     
+    //var homes = [HMHome]()
+    
     var homeStoreManager: HomeStoreManager {
         return HomeStoreManager.sharedStoreManager
     }
@@ -42,7 +44,21 @@ extension UIViewController{
     func displayMessage(title: String, message: String) {
         dispatch_async(dispatch_get_main_queue()) {
             let alert = UIAlertController(title: title, message: message, preferredStyle:UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+    
+    func updatePrimaryHome(newPrimaryHome: HMHome) {
+        guard newPrimaryHome != homeManager.primaryHome else { return }
+        
+        homeManager.updatePrimaryHome(newPrimaryHome) { error in
+            if let error = error {
+                self.displayError(error)
+                return
+            }
+            
+            //self.didUpdatePrimaryHome()
         }
     }
     

@@ -7,16 +7,19 @@
 //
 
 import UIKit
+import HomeKit
 
-class RoomViewController: UIViewController {
+class RoomViewController: UIViewController,HMHomeManagerDelegate,HMAccessoryDelegate {
 
     let cellReuseId:String = "CellID"
-    
+    //var homes = [HMHome]()
     //Declare properties here ...
     @IBOutlet weak var roomTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        homeManager.delegate = self
+        
         roomTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier:cellReuseId)
         // Do any additional setup after loading the view.
     }
@@ -49,7 +52,8 @@ class RoomViewController: UIViewController {
     */
     
     @IBAction func addNewHomeButtonPressed(sender: AnyObject) {
-        self.addHomeWithName("Home1")
+ 
+        self.addHomeWithName("MyPrimaryHome")
     }
     
     private func addHomeWithName(name: String) {
@@ -58,11 +62,29 @@ class RoomViewController: UIViewController {
                 self.displayError(error)
                 return
             }
-            
-            //self.didAddHome(newHome!)
+            self.updatePrimaryHome(newHome!)
             self.displayMessage("Home added", message: "\(name)")
         }
         
     }
 
+    func homeManagerDidUpdateHomes(manager: HMHomeManager) {
+        //Test code for removing a home ...
+//        let homesArray = homeManager.homes
+//        if homesArray.count > 0{
+//            let oldHome = homesArray[0]
+//            self.removeHome(oldHome)
+//        }
+        print("Updated Home Manager Successfully")
+    }
+    
+    func removeHome(inHome:HMHome){
+        
+        homeManager.removeHome(inHome){ error in
+            if let error = error {
+                self.displayError(error)
+                return
+            }
+        }
+    }
 }
