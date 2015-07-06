@@ -43,7 +43,7 @@
                     <navigationItem key="navigationItem" title="Rooms" id="5pt-5v-44b">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="979-o0-ew7">
                             <connections>
-                                <action selector="addNewHomeButtonPressed:" destination="sKS-jJ-6WZ" id="nB9-SD-VbL"/>
+                                <action selector="addNewRoomButtonPressed:" destination="sKS-jJ-6WZ" id="ssz-Sg-fw6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

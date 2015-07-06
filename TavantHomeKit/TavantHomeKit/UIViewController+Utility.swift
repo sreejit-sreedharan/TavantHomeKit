@@ -22,6 +22,10 @@ extension UIViewController{
         return homeStoreManager.homeManager
     }
     
+    var home: HMHome! {
+        return homeStoreManager.home
+    }
+    
     func displayError(error: NSError) {
         if let errorCode = HMErrorCode(rawValue: error.code) {
             if self.presentedViewController != nil || errorCode == .OperationCancelled || errorCode == .UserDeclinedAddingUser {
@@ -57,9 +61,13 @@ extension UIViewController{
                 self.displayError(error)
                 return
             }
-            
             //self.didUpdatePrimaryHome()
         }
+    }
+    
+    func presentAddAlertWithAttributeType(type: String, placeholder: String? = nil, shortType: String? = nil, completion: (String) -> Void) {
+        let alertController = UIAlertController(attributeType: type, completionHandler: completion, placeholder: placeholder, shortType: shortType)
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
 }
