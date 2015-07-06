@@ -43,7 +43,7 @@
                     <navigationItem key="navigationItem" title="Rooms" id="5pt-5v-44b">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="979-o0-ew7">
                             <connections>
-                                <action selector="addNewHomeButtonPressed:" destination="sKS-jJ-6WZ" id="nB9-SD-VbL"/>
+                                <action selector="addNewRoomButtonPressed:" destination="sKS-jJ-6WZ" id="ssz-Sg-fw6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -58,7 +58,6 @@
         <!--Rooms + Zones-->
         <scene sceneID="W2W-oz-Vyr">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vYb-Zt-Wz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="RoomStoryBoardID" automaticallyAdjustsScrollViewInsets="NO" id="EXI-MF-Pki" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Rooms + Zones" id="dxt-Uz-dYp"/>
                     <toolbarItems/>
@@ -71,6 +70,7 @@
                         <segue destination="sKS-jJ-6WZ" kind="relationship" relationship="rootViewController" id="nmY-VE-qWA"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYb-Zt-Wz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1209" y="1054"/>
         </scene>

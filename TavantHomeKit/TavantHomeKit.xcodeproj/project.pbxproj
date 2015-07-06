@@ -18,6 +18,7 @@
 		B10AAF421B46AE4900B28548 /* LoginScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B10AAF411B46AE4900B28548 /* LoginScreen.xib */; };
 		B10AAF451B46BF7600B28548 /* DeviceStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10AAF441B46BF7600B28548 /* DeviceStoryboard.storyboard */; };
 		B10AAF471B46BFC500B28548 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10AAF461B46BFC500B28548 /* DeviceViewController.swift */; };
+		B16D06FB1B4A8DF300F31CE3 /* UIAlertController+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16D06FA1B4A8DF300F31CE3 /* UIAlertController+Utility.swift */; };
 		B1CE0AB61B45135E0074A6B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1CE0AB51B45135E0074A6B0 /* Main.storyboard */; };
 		B1CE0ABA1B4514190074A6B0 /* HomeScreenTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE0AB91B4514190074A6B0 /* HomeScreenTabBarController.swift */; };
 		B1CE0ABC1B454DF30074A6B0 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE0ABB1B454DF30074A6B0 /* RoomViewController.swift */; };
@@ -51,6 +52,7 @@
 		B10AAF411B46AE4900B28548 /* LoginScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginScreen.xib; sourceTree = "<group>"; };
 		B10AAF441B46BF7600B28548 /* DeviceStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DeviceStoryboard.storyboard; sourceTree = "<group>"; };
 		B10AAF461B46BFC500B28548 /* DeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
+		B16D06FA1B4A8DF300F31CE3 /* UIAlertController+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Utility.swift"; sourceTree = "<group>"; };
 		B1CE0AB51B45135E0074A6B0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B1CE0AB91B4514190074A6B0 /* HomeScreenTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenTabBarController.swift; sourceTree = "<group>"; };
 		B1CE0ABB1B454DF30074A6B0 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
@@ -98,14 +100,12 @@
 		45EE05B21B3ADC7F0003894C /* TavantHomeKit */ = {
 			isa = PBXGroup;
 			children = (
+				B10AAF4A1B46C12100B28548 /* Controller */,
+				B10AAF491B46C11100B28548 /* HelperClasses */,
+				B10AAF481B46C10700B28548 /* Model */,
 				B10AAF431B46AE5F00B28548 /* Views */,
-				B1CE0ABD1B4556540074A6B0 /* Homes */,
 				45EE05D71B3ADD790003894C /* TavantHomeKit.entitlements */,
 				45EE05B51B3ADC7F0003894C /* AppDelegate.swift */,
-				45EE05B71B3ADC7F0003894C /* ViewController.swift */,
-				B1CE0AB91B4514190074A6B0 /* HomeScreenTabBarController.swift */,
-				B1CE0ABB1B454DF30074A6B0 /* RoomViewController.swift */,
-				B10AAF461B46BFC500B28548 /* DeviceViewController.swift */,
 				45EE05BC1B3ADC7F0003894C /* Images.xcassets */,
 				45EE05BE1B3ADC7F0003894C /* LaunchScreen.xib */,
 				45EE05B31B3ADC7F0003894C /* Supporting Files */,
@@ -117,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				45EE05B41B3ADC7F0003894C /* Info.plist */,
-				B10AAF3D1B466C8200B28548 /* UIViewController+Utility.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -150,9 +149,61 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		B10AAF481B46C10700B28548 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B10AAF491B46C11100B28548 /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				B10AAF3D1B466C8200B28548 /* UIViewController+Utility.swift */,
+				B16D06FA1B4A8DF300F31CE3 /* UIAlertController+Utility.swift */,
+			);
+			name = HelperClasses;
+			sourceTree = "<group>";
+		};
+		B10AAF4A1B46C12100B28548 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B10AAF4D1B46C17300B28548 /* Login */,
+				B10AAF4C1B46C16900B28548 /* Rooms+Zones */,
+				B10AAF4B1B46C15300B28548 /* Devices */,
+				B1CE0ABD1B4556540074A6B0 /* Homes */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B10AAF4B1B46C15300B28548 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				B10AAF461B46BFC500B28548 /* DeviceViewController.swift */,
+			);
+			name = Devices;
+			sourceTree = "<group>";
+		};
+		B10AAF4C1B46C16900B28548 /* Rooms+Zones */ = {
+			isa = PBXGroup;
+			children = (
+				B1CE0ABB1B454DF30074A6B0 /* RoomViewController.swift */,
+			);
+			name = "Rooms+Zones";
+			sourceTree = "<group>";
+		};
+		B10AAF4D1B46C17300B28548 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				45EE05B71B3ADC7F0003894C /* ViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		B1CE0ABD1B4556540074A6B0 /* Homes */ = {
 			isa = PBXGroup;
 			children = (
+				B1CE0AB91B4514190074A6B0 /* HomeScreenTabBarController.swift */,
 				B1CE0ABE1B45567F0074A6B0 /* HomeStoreManager.swift */,
 			);
 			name = Homes;
@@ -271,6 +322,7 @@
 				B1CE0ABA1B4514190074A6B0 /* HomeScreenTabBarController.swift in Sources */,
 				B10AAF471B46BFC500B28548 /* DeviceViewController.swift in Sources */,
 				B1CE0ABF1B45567F0074A6B0 /* HomeStoreManager.swift in Sources */,
+				B16D06FB1B4A8DF300F31CE3 /* UIAlertController+Utility.swift in Sources */,
 				45EE05B81B3ADC7F0003894C /* ViewController.swift in Sources */,
 				45EE05B61B3ADC7F0003894C /* AppDelegate.swift in Sources */,
 				B1CE0ABC1B454DF30074A6B0 /* RoomViewController.swift in Sources */,
