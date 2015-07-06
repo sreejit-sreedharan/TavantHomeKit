@@ -25,7 +25,7 @@ class HomeScreenTabBarController: UITabBarController,HMHomeManagerDelegate {
         let deviceScreenStoryboard : UIStoryboard = UIStoryboard(name: "DeviceStoryboard", bundle: nil)
         let deviceScreen : UINavigationController = deviceScreenStoryboard.instantiateViewControllerWithIdentifier("DeviceStoryboardID") as! UINavigationController
         
-        self.viewControllers = [roomScreen,deviceScreen];
+        self.viewControllers = [deviceScreen,roomScreen];
         // Do any additional setup after loading the view.
 //        print("\(self.tabBarController) and  \(currentTabController)")
 //        var vCArray = self.viewControllers!
