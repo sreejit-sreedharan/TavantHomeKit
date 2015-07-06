@@ -82,15 +82,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		453E0FE71B4A95150078A362 /* Devices */ = {
-			isa = PBXGroup;
-			children = (
-				B10AAF461B46BFC500B28548 /* DeviceViewController.swift */,
-				453E0FEA1B4A95DB0078A362 /* DeviceBrowserViewController.swift */,
-			);
-			name = Devices;
-			sourceTree = "<group>";
-		};
 		45EE05A71B3ADC7F0003894C = {
 			isa = PBXGroup;
 			children = (
@@ -120,9 +111,6 @@
 				45EE05D71B3ADD790003894C /* TavantHomeKit.entitlements */,
 				45EE05B51B3ADC7F0003894C /* AppDelegate.swift */,
 				45EE05B71B3ADC7F0003894C /* ViewController.swift */,
-				B1CE0AB91B4514190074A6B0 /* HomeScreenTabBarController.swift */,
-				B1CE0ABB1B454DF30074A6B0 /* RoomViewController.swift */,
-				453E0FE71B4A95150078A362 /* Devices */,
 				45EE05BC1B3ADC7F0003894C /* Images.xcassets */,
 				45EE05BE1B3ADC7F0003894C /* LaunchScreen.xib */,
 				45EE05B31B3ADC7F0003894C /* Supporting Files */,
@@ -198,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				B10AAF461B46BFC500B28548 /* DeviceViewController.swift */,
+				453E0FEA1B4A95DB0078A362 /* DeviceBrowserViewController.swift */,
 			);
 			name = Devices;
 			sourceTree = "<group>";
@@ -213,7 +202,6 @@
 		B10AAF4D1B46C17300B28548 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				45EE05B71B3ADC7F0003894C /* ViewController.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
