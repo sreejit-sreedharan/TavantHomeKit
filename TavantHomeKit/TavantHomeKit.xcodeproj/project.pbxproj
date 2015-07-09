@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		453E0FEB1B4A95DB0078A362 /* DeviceBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453E0FEA1B4A95DB0078A362 /* DeviceBrowserViewController.swift */; };
 		453E0FED1B4A9DA40078A362 /* Array+Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453E0FEC1B4A9DA40078A362 /* Array+Sorting.swift */; };
+		45CF46E31B4BD14F00621461 /* DeviceDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CF46E21B4BD14F00621461 /* DeviceDetailTableViewController.swift */; };
+		45CF46E51B4CF95E00621461 /* HMHome+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CF46E41B4CF95E00621461 /* HMHome+Properties.swift */; };
+		45CF47AB1B4E6BF900621461 /* HMService+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CF47AA1B4E6BF900621461 /* HMService+Properties.swift */; };
 		45EE05B61B3ADC7F0003894C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE05B51B3ADC7F0003894C /* AppDelegate.swift */; };
 		45EE05B81B3ADC7F0003894C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE05B71B3ADC7F0003894C /* ViewController.swift */; };
 		45EE05BD1B3ADC7F0003894C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45EE05BC1B3ADC7F0003894C /* Images.xcassets */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		453E0FEA1B4A95DB0078A362 /* DeviceBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceBrowserViewController.swift; sourceTree = "<group>"; };
 		453E0FEC1B4A9DA40078A362 /* Array+Sorting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Sorting.swift"; sourceTree = "<group>"; };
+		45CF46E21B4BD14F00621461 /* DeviceDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDetailTableViewController.swift; sourceTree = "<group>"; };
+		45CF46E41B4CF95E00621461 /* HMHome+Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HMHome+Properties.swift"; sourceTree = "<group>"; };
+		45CF47AA1B4E6BF900621461 /* HMService+Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HMService+Properties.swift"; sourceTree = "<group>"; };
 		45EE05B01B3ADC7F0003894C /* TavantHomeKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TavantHomeKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EE05B41B3ADC7F0003894C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45EE05B51B3ADC7F0003894C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,7 +127,6 @@
 		45EE05B31B3ADC7F0003894C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				453E0FEC1B4A9DA40078A362 /* Array+Sorting.swift */,
 				45EE05B41B3ADC7F0003894C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -165,6 +170,9 @@
 		B10AAF491B46C11100B28548 /* HelperClasses */ = {
 			isa = PBXGroup;
 			children = (
+				45CF47AA1B4E6BF900621461 /* HMService+Properties.swift */,
+				45CF46E41B4CF95E00621461 /* HMHome+Properties.swift */,
+				453E0FEC1B4A9DA40078A362 /* Array+Sorting.swift */,
 				B10AAF3D1B466C8200B28548 /* UIViewController+Utility.swift */,
 				B16D06FA1B4A8DF300F31CE3 /* UIAlertController+Utility.swift */,
 			);
@@ -187,6 +195,7 @@
 			children = (
 				B10AAF461B46BFC500B28548 /* DeviceViewController.swift */,
 				453E0FEA1B4A95DB0078A362 /* DeviceBrowserViewController.swift */,
+				45CF46E21B4BD14F00621461 /* DeviceDetailTableViewController.swift */,
 			);
 			name = Devices;
 			sourceTree = "<group>";
@@ -331,9 +340,12 @@
 				B1CE0ABF1B45567F0074A6B0 /* HomeStoreManager.swift in Sources */,
 				B16D06FB1B4A8DF300F31CE3 /* UIAlertController+Utility.swift in Sources */,
 				45EE05B81B3ADC7F0003894C /* ViewController.swift in Sources */,
+				45CF46E31B4BD14F00621461 /* DeviceDetailTableViewController.swift in Sources */,
 				45EE05B61B3ADC7F0003894C /* AppDelegate.swift in Sources */,
+				45CF46E51B4CF95E00621461 /* HMHome+Properties.swift in Sources */,
 				B1CE0ABC1B454DF30074A6B0 /* RoomViewController.swift in Sources */,
 				B10AAF3E1B466C8200B28548 /* UIViewController+Utility.swift in Sources */,
+				45CF47AB1B4E6BF900621461 /* HMService+Properties.swift in Sources */,
 				453E0FED1B4A9DA40078A362 /* Array+Sorting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
