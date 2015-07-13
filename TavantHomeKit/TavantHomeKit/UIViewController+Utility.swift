@@ -22,6 +22,10 @@ extension UIViewController{
         return homeStoreManager.homeManager
     }
     
+    var homeObjectModel:HomeKitObjectModel{
+        return HomeKitObjectModel.sharedManager
+    }
+    
     var home: HMHome! {
         return homeStoreManager.home
     }

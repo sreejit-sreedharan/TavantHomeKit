@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Zones-->
+        <scene sceneID="Zj4-uR-DcM">
+            <objects>
+                <viewController storyboardIdentifier="ZoneStoryBoardID" id="h6E-SM-UJw" customClass="ZonesViewController" customModule="TavantHomeKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OMD-po-7vP"/>
+                        <viewControllerLayoutGuide type="bottom" id="MHI-Ff-D4b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4O9-RG-fu4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QYk-P7-3u3">
+                                <rect key="frame" x="0.0" y="30" width="600" height="521"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="h6E-SM-UJw" id="Qna-gU-OP5"/>
+                                    <outlet property="delegate" destination="h6E-SM-UJw" id="1UV-4K-xZY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QYk-P7-3u3" firstAttribute="leading" secondItem="4O9-RG-fu4" secondAttribute="leadingMargin" constant="-20" id="4PK-U2-aM2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QYk-P7-3u3" secondAttribute="trailing" constant="-20" id="WLS-LB-VUe"/>
+                            <constraint firstItem="QYk-P7-3u3" firstAttribute="top" secondItem="4O9-RG-fu4" secondAttribute="topMargin" constant="30" id="dG1-VL-TlW"/>
+                            <constraint firstItem="MHI-Ff-D4b" firstAttribute="top" secondItem="QYk-P7-3u3" secondAttribute="bottom" id="jCf-8o-1bf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="jwH-nu-Zab"/>
+                    <navigationItem key="navigationItem" title="Zones" id="Y7P-mN-6Vp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Q9B-Ms-OMP">
+                            <connections>
+                                <action selector="addNewRoomButtonPressed:" destination="h6E-SM-UJw" id="dj4-vK-d0N"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="zoneTableView" destination="QYk-P7-3u3" id="aBV-pY-AIW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ekG-sK-0hy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1601" y="581"/>
+        </scene>
+        <!--Rooms + Zones-->
+        <scene sceneID="oYx-gN-eRQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RIb-j0-kyg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Rooms + Zones" id="xVH-Bt-B1O"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a7a-2y-DNd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="h6E-SM-UJw" kind="relationship" relationship="rootViewController" id="dHK-QF-26K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="87l-qU-7f8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="827" y="844"/>
+        </scene>
+    </scenes>
+</document>

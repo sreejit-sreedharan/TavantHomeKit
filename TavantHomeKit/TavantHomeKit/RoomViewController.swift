@@ -13,11 +13,10 @@ class RoomViewController: UIViewController,HMHomeManagerDelegate,HMAccessoryDele
     
     let cellReuseId:String = "CellID"
     
-    var roomList = [HMRoom]()
-    
     //Declare properties here ...
     @IBOutlet weak var roomTableView: UITableView!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         homeManager.delegate = self
@@ -36,15 +35,20 @@ class RoomViewController: UIViewController,HMHomeManagerDelegate,HMAccessoryDele
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return roomList.count
+        return homeObjectModel.rooms.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellReuseId, forIndexPath: indexPath)
-        let currentRoom = roomList[indexPath.row] as HMRoom
+        let currentRoom = homeObjectModel.rooms[indexPath.row] as HMRoom
         cell.textLabel?.text = currentRoom.name
         
         return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+        let controller:UIViewController = UIViewController()
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     func tableView(tableView: UITableView,
@@ -53,17 +57,14 @@ class RoomViewController: UIViewController,HMHomeManagerDelegate,HMAccessoryDele
             
             if editingStyle == .Delete{
                 
-                let roomToBeDeleted = roomList[indexPath.row] as HMRoom
+                let roomToBeDeleted = homeObjectModel.rooms[indexPath.row] as HMRoom
                 home!.removeRoom(roomToBeDeleted) { error in
                     
                     if error != nil{
 
                     } else {
-                        self.roomList.removeAtIndex(indexPath.row)
+                        self.homeObjectModel.remove(roomToBeDeleted)
                         self.roomTableView.reloadData()
-//                        tableView.deleteRowsAtIndexPaths([indexPath],
-//                            withRowAnimation: .Automatic)
-                        
                     }
                     
                 }
@@ -72,27 +73,19 @@ class RoomViewController: UIViewController,HMHomeManagerDelegate,HMAccessoryDele
             
     }
     
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
-    
-    @IBAction func addNewRoomButtonPressed(sender: AnyObject) {
+
+    func addNewRoom() {
         
         // self.addHomeWithName("MyPrimaryHome")
         presentAddAlertWithAttributeType(NSLocalizedString("Room", comment: "Room"),
             placeholder: NSLocalizedString("Living Room", comment: "Living Room")) { roomName in
                 self.addRoomWithName(roomName)
         }
+        
+        
     }
     
     private func addHomeWithName(name: String) {
-        // print(self.homeStoreManager.home!)
         homeManager.addHomeWithName(name) { newHome, error in
             if let error = error {
                 self.displayError(error)
@@ -112,29 +105,10 @@ class RoomViewController: UIViewController,HMHomeManagerDelegate,HMAccessoryDele
                 self.displayError(error)
                 return
             }
-            self.roomList.append(newRoom!)
+            self.homeObjectModel.append(newRoom!)
             self.roomTableView.reloadData()
         }
     }
-    
-    //    private func removeRoom(inIndexPath:NSIndexPath){
-    //        let roomToBeDeleted = roomList[inIndexPath.row] as HMRoom
-    //        home!.removeRoom(roomToBeDeleted) { error in
-    //
-    //            if error != nil{
-    ////                UIAlertController.showAlertControllerOnHostController(strongSelf,
-    ////                    title: "Error",
-    ////                    message: "An error occurred = \(error)",
-    ////                    buttonTitle: "OK")
-    //            } else {
-    //
-    //                self.roomTableView.deleteRowsAtIndexPaths([inIndexPath],
-    //                    withRowAnimation: .Automatic)
-    //
-    //            }
-    //
-    //            }
-    //    }
     
     // To update the home manager class with the updated homes available
     func homeManagerDidUpdateHomes(manager: HMHomeManager) {
@@ -147,8 +121,9 @@ class RoomViewController: UIViewController,HMHomeManagerDelegate,HMAccessoryDele
         print(manager.primaryHome)
         self.homeStoreManager.home = manager.primaryHome
         //Get list of rooms ...
-        roomList = home!.rooms
-        print(roomList)
+        if let tempHome:HMHome = home{
+            self.homeObjectModel.rooms = tempHome.rooms
+        }
         self.roomTableView.reloadData()
         print("Updated Home Manager Successfully")
     }

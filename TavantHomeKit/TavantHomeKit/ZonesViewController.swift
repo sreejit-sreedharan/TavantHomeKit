@@ -1,28 +1,32 @@
 //
-//  DeviceViewController.swift
+//  ZonesViewController.swift
 //  TavantHomeKit
 //
-//  Created by administrator on 03/07/15.
+//  Created by administrator on 08/07/15.
 //  Copyright © 2015 tavant_sreejit. All rights reserved.
 //
 
 import UIKit
 
-class DeviceViewController: UIViewController {
+class ZonesViewController: UIViewController {
 
     let cellReuseId:String = "CellID"
-    @IBOutlet weak var devicesTableView: UITableView!
+    @IBOutlet weak var zoneTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(devicesTableView)
-        devicesTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier:cellReuseId)
+        zoneTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier:cellReuseId)
+        //self.view.backgroundColor = UIColor.redColor()
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -31,17 +35,12 @@ class DeviceViewController: UIViewController {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellReuseId, forIndexPath: indexPath)
-        
-        cell.textLabel?.text = "Device \(indexPath.row + 1)"
+        //let currentRoom = homeObjectModel.rooms[indexPath.row] as HMRoom
+        cell.textLabel?.text = "test"
         
         return cell
     }
-
-    @IBAction func addDeviceButtonPressed(sender: AnyObject) {
-        let deviceStoryboard : UIStoryboard = UIStoryboard(name: "DeviceStoryboard", bundle: nil)
-        let deviceBrowserVC : DeviceBrowserViewController = deviceStoryboard.instantiateViewControllerWithIdentifier("DeviceBrowserViewController") as! DeviceBrowserViewController
-        self.navigationController?.pushViewController(deviceBrowserVC, animated: true)
-    }
+    
     /*
     // MARK: - Navigation
 

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+    </dependencies>
+    <scenes>
+        <!--Rooms+Zones-->
+        <scene sceneID="yt4-2R-5Zn">
+            <objects>
+                <viewController storyboardIdentifier="RZViewStoryboardID" id="3TA-G2-Obg" customClass="RZViewController" customModule="TavantHomeKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tQi-Jr-Fo4"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Rt-XS-G9P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UXd-3t-IN2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Rooms+Zones" id="DR8-vR-OqI"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Rooms+Zones" id="KNF-R1-hlC">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xeY-1B-Tma">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="3TA-G2-Obg" id="ybf-72-RDz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZlR-Jz-jFw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1339" y="115"/>
+        </scene>
+        <!--Devices NavController-->
+        <scene sceneID="puB-J2-yba">
+            <objects>
+                <navigationController storyboardIdentifier="RZStoryboardID" automaticallyAdjustsScrollViewInsets="NO" id="CiZ-Wy-IRC" userLabel="Devices NavController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MUm-gr-yIV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3TA-G2-Obg" kind="relationship" relationship="rootViewController" id="qXx-fX-aTt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Q2-Gb-1pk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586" y="242"/>
+        </scene>
+    </scenes>
+</document>

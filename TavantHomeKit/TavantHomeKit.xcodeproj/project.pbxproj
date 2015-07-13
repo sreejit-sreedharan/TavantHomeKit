@@ -21,10 +21,15 @@
 		B10AAF451B46BF7600B28548 /* DeviceStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10AAF441B46BF7600B28548 /* DeviceStoryboard.storyboard */; };
 		B10AAF471B46BFC500B28548 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10AAF461B46BFC500B28548 /* DeviceViewController.swift */; };
 		B16D06FB1B4A8DF300F31CE3 /* UIAlertController+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16D06FA1B4A8DF300F31CE3 /* UIAlertController+Utility.swift */; };
-		B1CE0AB61B45135E0074A6B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1CE0AB51B45135E0074A6B0 /* Main.storyboard */; };
+		B18E26DD1B4BAB910051C5AC /* HomeKitObjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E26DC1B4BAB910051C5AC /* HomeKitObjectModel.swift */; };
+		B18E26E11B4C059B0051C5AC /* CustomSegmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18E26E01B4C059B0051C5AC /* CustomSegmentController.m */; };
 		B1CE0ABA1B4514190074A6B0 /* HomeScreenTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE0AB91B4514190074A6B0 /* HomeScreenTabBarController.swift */; };
 		B1CE0ABC1B454DF30074A6B0 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE0ABB1B454DF30074A6B0 /* RoomViewController.swift */; };
 		B1CE0ABF1B45567F0074A6B0 /* HomeStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE0ABE1B45567F0074A6B0 /* HomeStoreManager.swift */; };
+		B1EE659A1B4CE4BB00916B46 /* ZonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EE65991B4CE4BB00916B46 /* ZonesViewController.swift */; };
+		B1EE659C1B4CE4EF00916B46 /* ZonesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1EE659B1B4CE4EF00916B46 /* ZonesStoryboard.storyboard */; };
+		B1EE659E1B4CE7E800916B46 /* Rooms+ZonesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1EE659D1B4CE7E800916B46 /* Rooms+ZonesStoryboard.storyboard */; };
+		B1EE65A01B4D0EF100916B46 /* RZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EE659F1B4D0EF100916B46 /* RZViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +62,17 @@
 		B10AAF441B46BF7600B28548 /* DeviceStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DeviceStoryboard.storyboard; sourceTree = "<group>"; };
 		B10AAF461B46BFC500B28548 /* DeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
 		B16D06FA1B4A8DF300F31CE3 /* UIAlertController+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Utility.swift"; sourceTree = "<group>"; };
-		B1CE0AB51B45135E0074A6B0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B18E26DC1B4BAB910051C5AC /* HomeKitObjectModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeKitObjectModel.swift; sourceTree = "<group>"; };
+		B18E26DF1B4C059B0051C5AC /* CustomSegmentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSegmentController.h; sourceTree = "<group>"; };
+		B18E26E01B4C059B0051C5AC /* CustomSegmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSegmentController.m; sourceTree = "<group>"; };
+		B18E26E21B4C074E0051C5AC /* TavantHomeKit-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TavantHomeKit-Bridging-Header.h"; sourceTree = "<group>"; };
 		B1CE0AB91B4514190074A6B0 /* HomeScreenTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenTabBarController.swift; sourceTree = "<group>"; };
 		B1CE0ABB1B454DF30074A6B0 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		B1CE0ABE1B45567F0074A6B0 /* HomeStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeStoreManager.swift; sourceTree = "<group>"; };
+		B1EE65991B4CE4BB00916B46 /* ZonesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZonesViewController.swift; sourceTree = "<group>"; };
+		B1EE659B1B4CE4EF00916B46 /* ZonesStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ZonesStoryboard.storyboard; sourceTree = "<group>"; };
+		B1EE659D1B4CE7E800916B46 /* Rooms+ZonesStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Rooms+ZonesStoryboard.storyboard"; sourceTree = "<group>"; };
+		B1EE659F1B4D0EF100916B46 /* RZViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RZViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,7 @@
 		45EE05A71B3ADC7F0003894C = {
 			isa = PBXGroup;
 			children = (
+				B18E26E21B4C074E0051C5AC /* TavantHomeKit-Bridging-Header.h */,
 				45EE05D51B3ADD790003894C /* HomeKit.framework */,
 				45EE05B21B3ADC7F0003894C /* TavantHomeKit */,
 				45EE05C81B3ADC7F0003894C /* TavantHomeKitTests */,
@@ -104,8 +117,9 @@
 		45EE05B21B3ADC7F0003894C /* TavantHomeKit */ = {
 			isa = PBXGroup;
 			children = (
+				B18E26DE1B4C058A0051C5AC /* CustomPageControllers */,
 				B10AAF4A1B46C12100B28548 /* Controller */,
-				B10AAF491B46C11100B28548 /* HelperClasses */,
+				B10AAF491B46C11100B28548 /* Utilities */,
 				B10AAF481B46C10700B28548 /* Model */,
 				B10AAF431B46AE5F00B28548 /* Views */,
 				45EE05D71B3ADD790003894C /* TavantHomeKit.entitlements */,
@@ -121,7 +135,6 @@
 		45EE05B31B3ADC7F0003894C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				453E0FEC1B4A9DA40078A362 /* Array+Sorting.swift */,
 				45EE05B41B3ADC7F0003894C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -147,10 +160,11 @@
 		B10AAF431B46AE5F00B28548 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B1CE0AB51B45135E0074A6B0 /* Main.storyboard */,
 				B10AAF441B46BF7600B28548 /* DeviceStoryboard.storyboard */,
 				B10AAF3F1B46AD3500B28548 /* RoomStoryboard.storyboard */,
 				B10AAF411B46AE4900B28548 /* LoginScreen.xib */,
+				B1EE659B1B4CE4EF00916B46 /* ZonesStoryboard.storyboard */,
+				B1EE659D1B4CE7E800916B46 /* Rooms+ZonesStoryboard.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -158,17 +172,19 @@
 		B10AAF481B46C10700B28548 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B18E26DC1B4BAB910051C5AC /* HomeKitObjectModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
 		};
-		B10AAF491B46C11100B28548 /* HelperClasses */ = {
+		B10AAF491B46C11100B28548 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				453E0FEC1B4A9DA40078A362 /* Array+Sorting.swift */,
 				B10AAF3D1B466C8200B28548 /* UIViewController+Utility.swift */,
 				B16D06FA1B4A8DF300F31CE3 /* UIAlertController+Utility.swift */,
 			);
-			name = HelperClasses;
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		B10AAF4A1B46C12100B28548 /* Controller */ = {
@@ -194,7 +210,9 @@
 		B10AAF4C1B46C16900B28548 /* Rooms+Zones */ = {
 			isa = PBXGroup;
 			children = (
+				B1EE659F1B4D0EF100916B46 /* RZViewController.swift */,
 				B1CE0ABB1B454DF30074A6B0 /* RoomViewController.swift */,
+				B1EE65991B4CE4BB00916B46 /* ZonesViewController.swift */,
 			);
 			name = "Rooms+Zones";
 			sourceTree = "<group>";
@@ -204,6 +222,15 @@
 			children = (
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		B18E26DE1B4C058A0051C5AC /* CustomPageControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B18E26DF1B4C059B0051C5AC /* CustomSegmentController.h */,
+				B18E26E01B4C059B0051C5AC /* CustomSegmentController.m */,
+			);
+			name = CustomPageControllers;
 			sourceTree = "<group>";
 		};
 		B1CE0ABD1B4556540074A6B0 /* Homes */ = {
@@ -302,12 +329,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1CE0AB61B45135E0074A6B0 /* Main.storyboard in Resources */,
 				B10AAF451B46BF7600B28548 /* DeviceStoryboard.storyboard in Resources */,
 				45EE05C01B3ADC7F0003894C /* LaunchScreen.xib in Resources */,
 				B10AAF421B46AE4900B28548 /* LoginScreen.xib in Resources */,
+				B1EE659E1B4CE7E800916B46 /* Rooms+ZonesStoryboard.storyboard in Resources */,
 				45EE05BD1B3ADC7F0003894C /* Images.xcassets in Resources */,
 				B10AAF401B46AD3500B28548 /* RoomStoryboard.storyboard in Resources */,
+				B1EE659C1B4CE4EF00916B46 /* ZonesStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,13 +356,17 @@
 				453E0FEB1B4A95DB0078A362 /* DeviceBrowserViewController.swift in Sources */,
 				B1CE0ABA1B4514190074A6B0 /* HomeScreenTabBarController.swift in Sources */,
 				B10AAF471B46BFC500B28548 /* DeviceViewController.swift in Sources */,
+				B18E26DD1B4BAB910051C5AC /* HomeKitObjectModel.swift in Sources */,
 				B1CE0ABF1B45567F0074A6B0 /* HomeStoreManager.swift in Sources */,
 				B16D06FB1B4A8DF300F31CE3 /* UIAlertController+Utility.swift in Sources */,
 				45EE05B81B3ADC7F0003894C /* ViewController.swift in Sources */,
 				45EE05B61B3ADC7F0003894C /* AppDelegate.swift in Sources */,
 				B1CE0ABC1B454DF30074A6B0 /* RoomViewController.swift in Sources */,
 				B10AAF3E1B466C8200B28548 /* UIViewController+Utility.swift in Sources */,
+				B1EE65A01B4D0EF100916B46 /* RZViewController.swift in Sources */,
 				453E0FED1B4A9DA40078A362 /* Array+Sorting.swift in Sources */,
+				B1EE659A1B4CE4BB00916B46 /* ZonesViewController.swift in Sources */,
+				B18E26E11B4C059B0051C5AC /* CustomSegmentController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +495,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TavantHomeKit-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -478,6 +511,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TavantHomeKit-Bridging-Header.h";
 			};
 			name = Release;
 		};
