@@ -152,6 +152,10 @@ class DeviceBrowserViewController: UIViewController,HMAccessoryBrowserDelegate,U
 //        case .External(let accessory):
 //            externalAccessoryBrowser?.configureAccessory(accessory, withConfigurationUIOnViewController: self)
 //        }
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name:"DeviceStoryboard", bundle: nil)
+        let deviceDetailScreen = storyBoard.instantiateViewControllerWithIdentifier("DeviceDetailViewController")
+        self.navigationController?.pushViewController(deviceDetailScreen, animated: true)
     }
 
     /*
